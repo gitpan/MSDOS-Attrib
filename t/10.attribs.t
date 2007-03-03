@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 #---------------------------------------------------------------------
-# $Id: 10.attribs.t 1660 2007-02-18 21:07:20Z cjm $
+# $Id: 10.attribs.t 1670 2007-03-03 21:33:30Z cjm $
 #---------------------------------------------------------------------
 
 BEGIN {
@@ -70,8 +70,8 @@ if (set_attribs('',$testfile) || not $!) {
     print "ok $testNum\n";
 }
 
-if ($failed) { print "Failed $failed tests.\a\n" }
-else         { print "Passed all tests.\n"       }
+if ($failed) { print "# Failed $failed tests.\a\n" }
+else         { print "# Passed all tests.\n"       }
 
 exit $failed;
 

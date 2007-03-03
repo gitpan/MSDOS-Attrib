@@ -1,8 +1,8 @@
 ---
 name: MSDOS-Attrib
-version: 1.02
+version: 1.03
 author:
-  - Christopher J. Madsen <cjm@pobox.com>
+  - 'Christopher J. Madsen <perl@cjmweb.net>'
 abstract: Get or set MS-DOS file attributes
 license: perl
 resources:
@@ -15,7 +15,7 @@ dynamic_config: 0
 provides:
   MSDOS::Attrib:
     file: lib/MSDOS/Attrib.pm
-    version: 1.02
+    version: 1.03
 generated_by: Module::Build version 0.28
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

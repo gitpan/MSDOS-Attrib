@@ -1,5 +1,5 @@
 /*********************************************************************
- * $Id: Attrib.xs 1660 2007-02-18 21:07:20Z cjm $
+ * $Id: Attrib.xs 1670 2007-03-03 21:33:30Z cjm $
  *
  * Copyright 1996,1997 Christopher J. Madsen
  *
@@ -23,7 +23,8 @@
   #define INCL_DOSFILEMGR   /* File Manager values */
   #include <os2.h>
 #else /* WIN32 */
-  #include <winbase.h>
+  #define WIN32_LEAN_AND_MEAN
+  #include <windows.h>
   #define FILE_READONLY   FILE_ATTRIBUTE_READONLY
   #define FILE_HIDDEN     FILE_ATTRIBUTE_HIDDEN
   #define FILE_SYSTEM     FILE_ATTRIBUTE_SYSTEM
