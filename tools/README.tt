@@ -1,4 +1,6 @@
-MSDOS::Attrib version 1.04, released May 3, 2008
+[% # $Id: README.tt 2003 2008-05-03 21:02:51Z cjm $ %]
+MSDOS::Attrib version [%version%], released [%date%]
+
 
 DESCRIPTION
 	MSDOS::Attrib allows you to get or set file attributes under
@@ -34,12 +36,10 @@ DEPENDENCIES
 	None.
 
 CHANGES
-	Here's what's new in version 1.04 of MSDOS::Attrib:
+	Here's what's new in version [%version%] of MSDOS::Attrib:
 	(See the file "Changes" for the full revision history.)
 
-	- no functional changes
-	- check for supported OS in Build.PL
-	- minor clean up to documentation
+[%changes%]
 
 COPYRIGHT AND LICENSE
 	Copyright 1996,2008 Christopher J. Madsen
