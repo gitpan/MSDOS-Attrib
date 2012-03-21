@@ -3,7 +3,6 @@ package MSDOS::Attrib;
 #
 # Copyright 1996,2008 Christopher J. Madsen
 #
-# $Id: Attrib.pm 2003 2008-05-03 21:02:51Z cjm $
 # Author: Christopher J. Madsen <perl@cjmweb.net>
 # Created: 13 Mar 1996
 #
@@ -15,11 +14,11 @@ package MSDOS::Attrib;
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See either the
 # GNU General Public License or the Artistic License for more details.
 #
-# Get or set MS-DOS file attributes under OS/2 or Win32
+# ABSTRACT: Get or set MS-DOS file attributes
+#           under OS/2 or Win32
 #---------------------------------------------------------------------
 
-BEGIN { require 5.002 }
-
+use 5.005;
 use strict;
 use Carp;
 #use warnings;         # Wasn't core until 5.6.0
@@ -27,7 +26,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK @constants);
 
 BEGIN
 {
-  $VERSION = '1.04';
+  $VERSION = '1.05';
 
   require Exporter;
 
@@ -95,6 +94,7 @@ sub set_attribs ($@)
 } # end set_attribs
 
 1;
+
 __END__
 
 =head1 NAME
@@ -103,8 +103,8 @@ MSDOS::Attrib - Get or set MS-DOS file attributes
 
 =head1 VERSION
 
-This document describes version 1.04 of MSDOS::Attrib, released May 3, 2008.
-
+This document describes version 1.05 of
+MSDOS::Attrib, released March 21, 2012.
 
 =head1 SYNOPSIS
 
@@ -148,7 +148,6 @@ Returns the number of files successfully changed.
 
 =back
 
-
 =head1 SEE ALSO
 
 The L<OS2::ExtAttr> module provides access to extended attributes under OS/2.
@@ -156,24 +155,44 @@ The L<OS2::ExtAttr> module provides access to extended attributes under OS/2.
 The L<Win32::FileSecurity> module provides access to Discretionary
 Access Control Lists under Windows NT.
 
+The L<Win32::File> module provides similar functionality to
+MSDOS::Attrib, but with a different (and in my opinion clunkier)
+interface.
+
+=for Pod::Coverage
+FILE_
+constant
+
+=head1 CONFIGURATION AND ENVIRONMENT
+
+MSDOS::Attrib requires no configuration files or environment variables.
+
+=head1 INCOMPATIBILITIES
+
+None reported.
+
+=head1 BUGS AND LIMITATIONS
+
+No bugs have been reported.
 
 =head1 AUTHOR
 
-Christopher J. Madsen  S<< C<< <perl AT cjmweb.net> >> >>
+Christopher J. Madsen  S<C<< <perl AT cjmweb.net> >>>
 
-Please report any bugs or feature requests to
-S<< C<< <bug-MSDOS-Attrib AT rt.cpan.org> >> >>,
+Please report any bugs or feature requests
+to S<C<< <bug-MSDOS-Attrib AT rt.cpan.org> >>>
 or through the web interface at
-L<http://rt.cpan.org/Public/Bug/Report.html?Queue=MSDOS-Attrib>
+L<< http://rt.cpan.org/Public/Bug/Report.html?Queue=MSDOS-Attrib >>.
 
+You can follow or contribute to MSDOS-Attrib's development at
+L<< http://github.com/madsen/msdos-attrib >>.
 
-=head1 LICENSE AND COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
-Copyright 1996-2008 Christopher J. Madsen
+This software is copyright (c) 2012 by Christopher J. Madsen.
 
-This module is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself. See L<perlartistic>.
-
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =head1 DISCLAIMER OF WARRANTY
 
@@ -189,7 +208,7 @@ NECESSARY SERVICING, REPAIR, OR CORRECTION.
 
 IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
 WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
-REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENCE, BE
+REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENSE, BE
 LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL,
 OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
 THE SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
