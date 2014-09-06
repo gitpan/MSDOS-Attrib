@@ -26,7 +26,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK @constants);
 
 BEGIN
 {
-  $VERSION = '1.05';
+  $VERSION = '1.06';
 
   require Exporter;
 
@@ -103,8 +103,8 @@ MSDOS::Attrib - Get or set MS-DOS file attributes
 
 =head1 VERSION
 
-This document describes version 1.05 of
-MSDOS::Attrib, released March 21, 2012.
+This document describes version 1.06 of
+MSDOS::Attrib, released September 6, 2014.
 
 =head1 SYNOPSIS
 
@@ -160,7 +160,7 @@ MSDOS::Attrib, but with a different (and in my opinion clunkier)
 interface.
 
 =for Pod::Coverage
-FILE_
+FILE_.*
 constant
 
 =head1 CONFIGURATION AND ENVIRONMENT
@@ -185,11 +185,11 @@ or through the web interface at
 L<< http://rt.cpan.org/Public/Bug/Report.html?Queue=MSDOS-Attrib >>.
 
 You can follow or contribute to MSDOS-Attrib's development at
-L<< http://github.com/madsen/msdos-attrib >>.
+L<< https://github.com/madsen/msdos-attrib >>.
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2014 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

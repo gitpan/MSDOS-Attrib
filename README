@@ -1,4 +1,4 @@
-MSDOS-Attrib version 1.05, released March 21, 2012
+MSDOS-Attrib version 1.06, released September 6, 2014
 
 
 MSDOS::Attrib allows you to get or set file attributes under
@@ -40,18 +40,17 @@ DEPENDENCIES
 
 
 CHANGES
-    Here's what's new in version 1.05 of MSDOS::Attrib:
+    Here's what's new in version 1.06 of MSDOS::Attrib:
     (See the file "Changes" for the full revision history.)
 
 	- no functional changes
-	- now built with Dist::Zilla (includes v2 META.json)
-	- repository now publicly available on GitHub
+	- release tests moved to xt/
 
 
 
 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2014 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
